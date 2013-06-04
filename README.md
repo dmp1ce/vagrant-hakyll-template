@@ -7,7 +7,6 @@ Follow these steps to setup Hakyll on the Vagrant virtual machine.
 2. `vagrant ssh`
 3. `cabal update`
 4. `cabal install hakyll`
-5. `export PATH=$PATH:$HOME/.cabal/bin`
 
 BUILD
 -----
