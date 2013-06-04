@@ -21,6 +21,18 @@ class haskell {
   package { "haskell-platform":
     ensure => latest,
   }
+
+  file { "/home/vagrant/.bash_profile":
+    owner   => "vagrant",
+    group   => "vagrant",
+    mode    => 644,
+    replace => true,
+    ensure  => present,
+    source  => "/vagrant/files/.bash_profile",
+  }
 }
+
+# TODO: Install Hakyll.
+# Right now this is a manual step: cabal install hakyll
 
 include haskell
